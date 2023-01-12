@@ -1,3 +1,6 @@
+/* ********** global ********** */
+/* ********** global ********** */
+/* ********** global ********** */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +10,9 @@
 /* ********** colors ********** */
 /* ********** colors ********** */
 /* ********** colors ********** */
+/* ********** mixin for background gradient ********** */
+/* ********** mixin for background gradient ********** */
+/* ********** mixin for background gradient ********** */
 header {
   width: 100vw;
   height: 100vh;
