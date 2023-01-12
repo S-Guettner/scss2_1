@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ********** colors ********** */
+/* ********** colors ********** */
+/* ********** colors ********** */
+
+$purple:#bb4dfa;
+$cyan:#5bf2fd;
+$orange:#fcc736;
+$red:#fd5f5f;
+
+@mixin backgroundGradient($firstColor,$secondColor,$thirdColor,$fourthColor){
+    background-image: linear-gradient(45deg, $firstColor 12.50%,$secondColor 12.50%,$secondColor 25%,$thirdColor 25%,$thirdColor 37.50%, $fourthColor 37.50%, $fourthColor 50%, $firstColor 50%, $firstColor 62.50%, $secondColor 62.50%, $secondColor 75%, $thirdColor 75%, $thirdColor 87.50%, $fourthColor 87.50%, $fourthColor 100%);
+}
+
+
+header{
+    width: 100vw;
+    height: 100vh;
+    @include backgroundGradient($purple,$cyan,$red,$orange);
+    text-align: center;
+    padding-top:10rem;
+
+        p{
+            width: 10rem;
+            height: 10rem;
+            font-size: 7rem;
+            margin-left: 60rem;
+            margin-bottom: -3rem;
+            border-radius: 70%;
+            color: white;
+            background-color: $orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            color: white;
+            font-size: 7rem;
+        }
+        h3 {
+            @extend h1;
+            font-size: 3rem;
+        }
+    
+    section{
+        padding-top: 20rem;
+        margin-left: 70rem;
+        display: flex;
+        justify-content: space-between;
+        width: 10rem;
+    }
+}
+
+
+
